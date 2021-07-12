@@ -27,6 +27,6 @@ func (c circle) printArea() {
 
 	name := reflect.TypeOf(c).String()
 	shapeName := strings.Split(name, ".")
-	fmt.Println("area of", shapeName[1], c.getArea())
+	fmt.Println("The area of", shapeName[1], " is ", c.getArea())
 
 }

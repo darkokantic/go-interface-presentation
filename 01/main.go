@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Calculate surface are of square, triangle or circle")
+	fmt.Println("Calculate surface area of circle, square or triangle.")
 	fmt.Println("------------------------------------------------------")
 	fmt.Println("Choose option: 1, 2 or 3")
 	fmt.Println("1 - Circle")
@@ -29,7 +29,7 @@ func main() {
 		t := createTriangle()
 		t.printArea()
 	default:
-		fmt.Println("Incorect option, please enter 1, 2 or 3")
+		fmt.Println("Incorect option, please enter 1, 2 or 3!")
 
 	}
 
@@ -37,7 +37,7 @@ func main() {
 
 func readInt() int {
 	var i int
-	fmt.Println("Enter an integer value : ")
+	fmt.Println("Enter an integer value: ")
 
 	_, err := fmt.Scanf("%d", &i)
 
@@ -51,7 +51,7 @@ func readFloat() float64 {
 
 	var f float64
 
-	fmt.Println("Enter a float value : ")
+	fmt.Println("Enter a float value: ")
 	_, err := fmt.Scanf("%f", &f)
 
 	if err != nil {
