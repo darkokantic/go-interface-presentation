@@ -39,7 +39,7 @@ func readInt() int {
 	var i int
 	fmt.Println("Enter an integer value: ")
 
-	_, err := fmt.Scanf("%d", &i)
+	_, err := fmt.Scanf("%d\n", &i)
 
 	if err != nil {
 		fmt.Println(err)
@@ -52,7 +52,7 @@ func readFloat() float64 {
 	var f float64
 
 	fmt.Println("Enter a float value: ")
-	_, err := fmt.Scanf("%f", &f)
+	_, err := fmt.Scanf("%f\n", &f)
 
 	if err != nil {
 		fmt.Println(err)
