@@ -1,16 +1,16 @@
 package main
 
-type square struct {
+type Square struct {
 	lenght float64
 }
 
-func createSquare() square {
-	return square{
+func createSquare() Square {
+	return Square{
 		lenght: readFloat(),
 	}
 }
 
-func (s square) getArea() float64 {
+func (s Square) getArea() float64 {
 
 	return s.lenght * s.lenght
 

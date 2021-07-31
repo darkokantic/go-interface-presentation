@@ -6,23 +6,23 @@ import (
 	"strings"
 )
 
-type square struct {
+type Square struct {
 	lenght float64
 }
 
-func createSquare() square {
-	return square{
+func createSquare() Square {
+	return Square{
 		lenght: readFloat(),
 	}
 }
 
-func (s square) getArea() float64 {
+func (s Square) getArea() float64 {
 
 	return s.lenght * s.lenght
 
 }
 
-func (s square) printArea() {
+func (s Square) printArea() {
 
 	name := reflect.TypeOf(s).String()
 	shapeName := strings.Split(name, ".")

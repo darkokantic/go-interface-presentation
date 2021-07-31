@@ -4,17 +4,17 @@ import (
 	"math"
 )
 
-type circle struct {
+type Circle struct {
 	radius float64
 }
 
-func ceateCircle() circle {
-	return circle{
+func ceateCircle() Circle {
+	return Circle{
 		radius: readFloat(),
 	}
 }
 
-func (c circle) getArea() float64 {
+func (c Circle) getArea() float64 {
 
 	return math.Pi * c.radius * c.radius
 

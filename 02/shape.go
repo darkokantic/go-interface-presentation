@@ -6,11 +6,11 @@ import (
 	"strings"
 )
 
-type shape interface {
+type Shape interface {
 	getArea() float64
 }
 
-func printArea(s shape) {
+func printArea(s Shape) {
 
 	name := reflect.TypeOf(s).String()
 	shapeName := strings.Split(name, ".")

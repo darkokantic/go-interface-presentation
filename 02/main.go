@@ -17,17 +17,16 @@ func main() {
 	switch option {
 	case 1:
 		fmt.Println("What is the radius of the circle")
-		c := ceateCircle()
-		printArea(c)
+		printArea(ceateCircle())
 
 	case 2:
 		fmt.Println("What is the lenght of the square?")
-		s := createSquare()
-		printArea(s)
+		printArea(createSquare())
+
 	case 3:
 		fmt.Println("What are the base and height of the triangle?")
-		t := createTriangle()
-		printArea(t)
+		printArea(createTriangle())
+
 	default:
 		fmt.Println("Incorect option, please enter 1, 2 or 3!")
 
