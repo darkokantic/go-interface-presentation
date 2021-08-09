@@ -1,17 +1,17 @@
 package main
 
 type Square struct {
-	lenght float64
+	length float64
 }
 
 func createSquare() Square {
 	return Square{
-		lenght: readFloat(),
+		length: readFloat(),
 	}
 }
 
 func (s Square) getArea() float64 {
 
-	return s.lenght * s.lenght
+	return s.length * s.length
 
 }

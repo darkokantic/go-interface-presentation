@@ -8,7 +8,7 @@ type Circle struct {
 	radius float64
 }
 
-func ceateCircle() Circle {
+func createCircle() Circle {
 	return Circle{
 		radius: readFloat(),
 	}
