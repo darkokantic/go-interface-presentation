@@ -26,6 +26,7 @@ func main() {
 		s.printArea()
 
 	case 3:
+		fmt.Println("What are the base and height of the triangle?")
 		t := createTriangle()
 		t.printArea()
 
